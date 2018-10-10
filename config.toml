@@ -211,15 +211,15 @@ googleAnalytics = ""
       description = "Comunicación con los participantes, confirmación asistencia."
 
     [[params.about.events]]
-      img = "3.jpg"
+      img = "4.jpg"
       date = "Primer día del evento"
-      title = "Registración - Aprendiendo de IBM Watson"
+      title = "Aprendiendo de IBM Watson"
       description = "Texto"
 
     [[params.about.events]]
-      img = "4.jpg"
+      img = "3.jpg"
       date = "Segundo día del evento"
-      title = "Taller"
+      title = "Desarrollaremos la aplicación"
       description = "texto"
   
   # Location section
@@ -304,7 +304,7 @@ googleAnalytics = ""
 
     [[params.clients]]
       logo = "logo-dharma.jpg"
-      link = "#"
+      link = "http://dharma.frm.utn.edu.ar/"
 
     [[params.clients]]
       logo = "logo-valoremos-los-alimentos.jpg"
@@ -316,7 +316,7 @@ googleAnalytics = ""
 
     [[params.clients]]
       logo = "UTNLOGO.png"
-      link = "#"
+      link = "http://www.frm.utn.edu.ar/"
 
   [params.diversity]
     enable = false
