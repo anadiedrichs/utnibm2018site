@@ -1,0 +1,409 @@
+# Site settings
+baseurl = "https://satrdays-event-template.netlify.com/"
+languageCode = "es-ES"
+title = "EVENTO"
+theme = ["hugo-satrdays-theme", "hugo-agency-theme"]
+
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
+
+[params]
+  # You can use Markdown syntax for urls [text](//url.to/source) or
+  # most longer texts.
+  #
+  # All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+  # for more icons. The icons are represented by their corresponding
+  # CSS class.
+
+  # To provide some metadata for search engines feel free to add a few
+  # information about you and your website.
+  name = "EVENTO IBM MENDOZA"
+  description = "EVENTO IBM MENDOZA"
+  email = "utnibm2018@frm.utn.edu.ar"
+
+  # Link custom assets relative to /static
+  custom_css = ["css/satrday.css"]
+  custom_js  = []
+  favicon    = "img/favicon.ico"
+
+  # Possibility to disable external/additional fonts
+  # Exception: Fontawesome
+  disableFonts = false
+
+  # 404 error customization
+  [params.error404]
+    heading = "No se pudo encontrar el sitio."
+    text = "No se pudo encontrar el sitio"
+
+  # Optional piwik tracking
+  #[params.analytics.piwik]
+  #  URL = "https://stats.example.com"
+  #  ID = "42"
+  #  # Track all subdomains with "*.example.com"
+  #  domain = "www.example.com"
+  #  # Optional integrity check hash
+  #  hash = "sha512-RfeD0pacGTqy9m7U6PgehQfS4cc7SIt+e+P+H5e848kEvB/RW84CUGO3O4O3LNbxjevym6KPUZ8muPsMrI8WIw=="
+
+  # Navigation
+  [params.navigation]
+    brand = "UTN Mendoza"
+    # Optional logo as brand stored in img/
+    logo = "logo.png"
+    services = "About"
+    portfolio = "Talks"
+    eventbrite = "Register"
+    schedule = "Schedule"
+    team = "People"
+    contact = "Contacto"
+
+    # Add custom links. Those can be pre- and postpended to the default menu above.
+    # Use the weight attribute to order your custom links. Uncomment the example
+    # below and replace the values with your own.
+
+    # prepended links
+    #[[menu.prepend]]
+    #  url = "http://gohugo.io"
+    #  name = "Hugo"
+    #  weight = 10
+
+    # postpended links
+    [[menu.postpend]]
+      url = "http://satrdays.org/"
+      name = "satRdays.org"
+      weight = 10
+
+
+  # Hero section
+  [params.hero]
+    # To change the background image of the hero, replace 'header-bg.jpg' in
+    # the 'static/img' folder.
+    title = "EVENTO "
+    subtitle = "Un EVENTO de innovación y hackathon solidaria"
+    bg = true
+    buttonText = "Más info"
+
+
+  # About [Services] section
+  [params.services]
+    enable = true
+    title = "Acerca de"
+    subtitle = "Detalles del evento"
+
+    [[params.services.row]]
+
+    [[params.services.row.list]]
+      icon = "fa-clock-o"
+      title = "Detalles"
+      description = "[FECHAs horarios] en la UTN Mendoza"
+      url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-laptop"
+      title = "Hands on"
+      description = "Aprenderemos tecnologías innovadoras de IBM Watson"
+      url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-graduation-cap"
+      title = "Aprendizaje"
+      description = "Gana experiencia y aprendizaje en design thinking y cloud computing"
+      url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-users"
+      title = "Comunitario"
+      description = "Evento comunitario para desarrollar una aplicación para el Banco de Alimentos"
+      url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-money"
+      title = "Gratis"
+      description = "Evento gratuito, cupos limitados. Trae tu notebook"
+      url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-universal-access"
+      title = "Acceso"
+      description = "Destinado a estudiantes, docentes, expertos y público en general."
+      url = "#"
+
+  # Register section
+  # You only need ONE of these active
+  [params.tito]
+    enable = false
+    title = "Register"
+    bg = true
+    accountevent = "ultimateconf/2013"
+      # Go to https://ti.to/ and find the account (under your user) and event pair string e.g. "cardiff-satrday/2018"
+      # include botht the account and event in a string, seperated by /, with no spaces
+
+  [params.eventbrite]
+    enable = false
+    title = "Register"
+    bg = true
+    eid = "32416000129" 
+      # Go to https://www.eventbrite.co.uk/support/articles/en_US/How_To/how-to-sell-eventbrite-tickets-registrations-on-your-website-using-embeddable-widgets?lg=en_GB 
+      # Follow instructions to discover your 'Website Integration' embeddable iframe
+      # Take ONLY the numeric string between "eid=" and "&ref=etckt"
+      # Supply this string as the value to `eid` above
+
+  [params.tickettailor]
+    enable = false
+    title = "Register"
+    bg = true
+    eventviewid = "162430"
+      # Go to www.tickettailor.com and open your event page
+      # Note the number at the end of the url e.g. https://www.tickettailor.com/event/view/id/162430
+      # Supply the number ONLY in `eventviewid`
+  
+  # Call for papers section
+  [params.callforpapers]
+    enable = false
+    title = "Call For Papers"
+    bg = false
+    CfSpage = "/test3490"
+      # Go to Organizer > My Events > Dashboard and copy the "CfS Page" string into the `CfSpage` value
+    dates = "09 Aug - 21 Sep 2018"
+
+  # Talk [Portfolio] section
+  [params.portfolio]
+    enable = true
+    # All projects defined in their own files. You can find example projects
+    # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
+    # at the root of this Hugo site.
+    # For more informtion take a look at the README.
+    title = "Talks"
+    subtitle = "Who's saying what"
+    bg = true
+
+    [params.portfolio.modal]
+      client = "Client"
+      date = "Date"
+      category = "Category"
+      buttonText = "Close project"
+
+  # Schedule section
+  [params.schedule]
+    enable = true
+    title = "Schedule"
+    bg = false
+
+  # Important Dates [About] section
+  [params.about]
+    enable = true
+    title = "Fechas importantes"
+    subtitle = "Be prepared!"
+    endpoint = "Conference"
+
+    # The events will be listed from the top to the bottom.
+    # All images are stored under 'static/img/about'.
+    # Replace them with your own.
+    [[params.about.events]]
+      img = "1.jpg"
+      date = "Inscribite"
+      title = "Cupo limitado, participación gratuita"
+      description = "Difusión. Configura tu cuenta IBM https://tinyurl.com/ibmutn2018"
+
+    [[params.about.events]]
+      img = "2.jpg"
+      date = "Cierre inscripciones"
+      title = ""
+      description = "Comunicación con los participantes, confirmación asistencia."
+
+    [[params.about.events]]
+      img = "3.jpg"
+      date = "Primer día del evento"
+      title = "Registración - Aprendiendo de IBM Watson"
+      description = "Texto"
+
+    [[params.about.events]]
+      img = "4.jpg"
+      date = "Segundo día del evento"
+      title = "Taller"
+      description = "texto"
+  
+  # Location section
+  [params.location]
+    enable = true
+    title = "Ubicación"
+    bg = true
+   iframesrc = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1675.0200227791163!2d-68.8542883772129!3d-32.89710946536084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0908d5e865c5%3A0xb5ec70786453a73!2sUTN+-+Facultad+Regional+Mendoza!5e0!3m2!1ses-419!2sar!4v1538847884450"
+
+  # Team section
+  [params.team]
+    enable = true
+    # Possibility to center items
+    #center = true
+    title = "Team"
+    subtitle = "The people putting it together"
+    bg = false
+    description = ""
+    speakers = "Speakers"
+    
+
+    # All team member's pictures are stored under 'static/img/team'.
+    # Replace them with your own too.
+    # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
+    [[params.team.members]]
+      img = "faceholder.png"
+      name = "Organiser Name 1"
+      position = "Organiser Position 1"
+      reportsTo = ""
+      livesIn = "[Munich, Germany](#some-maps-url)"
+      scope = [
+        "Role 1 for [thing 1](#)",
+        "Role 2 for [thing 2](#)",
+        "Role 3 for [thing 3](#)"
+      ]
+      # For bio markdown and even multiline strings are available.
+      bio = """I do things,
+      and stuff"""
+      social = [
+        ["fa-twitter", "#"],
+        ["fa-github", "#"],
+        ["fa-linkedin", "#"]
+      ]
+
+    [[params.team.members]]
+      img = "faceholder.png"
+      name = "Organiser Name 2"
+      position = "Organiser Position 2"
+      social = [
+        ["fa-twitter", "#"],
+        ["fa-github", "#"],
+        ["fa-linkedin", "#"]
+      ]
+
+    [[params.team.members]]
+      img = "faceholder.png"
+      name = "Organiser Name 3"
+      position = "Organiser Position 3"
+      social = [
+        ["fa-twitter", "#"],
+        ["fa-github", "#"],
+        ["fa-linkedin", "#"]
+      ]
+
+  # Client section
+  [params.clients_list]
+    enable = true
+    # Possibility to center items
+    #center = true
+    # Optional client title specifying the involvement
+    title = "Sponsors"
+    bg = true
+
+    # All the clients' logos are stored under 'static/img/logos'.
+    # Replace them with your clients's logos.
+    # Suggestion: .svg in the size of 280px*80px looks good
+    
+
+    [[params.clients]]
+      logo = "bcoAlimentos.png"
+      link = "#"
+
+    [[params.clients]]
+      logo = "logo-dharma.jpg"
+      link = "#"
+
+    [[params.clients]]
+      logo = "logo-valoremos-los-alimentos.jpg"
+      link = "#"
+  
+    [[params.clients]]
+      logo = "ibmpos_black.jpg"
+      link = "#"
+
+    [[params.clients]]
+      logo = "UTNLOGO.png"
+      link = "#"
+
+  [params.diversity]
+    enable = false
+    title = ""
+    bg = true
+
+  # Contact section
+  [params.contact]
+    enable = true
+    title = "Contactanos"
+    subtitle  = "A nuestro correo utnibm2018 [at] frm.utn.edu.ar o en nuestras redes sociales."
+    buttonText = "Enviar mensaje"
+    # netlify = true
+
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+
+    # It is possible to substitute formspring with other providers
+    # as an example the mailout plugin from caddy.
+    # Provide the post URL for the form and depending on the provider
+    # add some custom JS script to finish the implementation.
+    # postURL = "https://example.com/mailout/"
+
+    email = "utnibm2018@frm.utn.edu.ar"
+
+    # Success and error message overwrite for async contact form
+    thanks = "Gracias por contactarse con nosotros."
+    error = "El mensaje no pudo ser enviado. Por favor contactenos a utnibm2018 at frm.utn.edu.ar"
+
+    ##[params.contact.captcha]
+       sitekey = "6LfuTnQUAAAAAAyimOEjxmEMfn9Vpl_xPAhx-Dlf"
+
+    # 'warning' defines error messages for invalid inputs
+    [params.contact.form.name]
+      text = "Su nombre *"
+      warning = "Por favor ingrese su nombre completo."
+
+    [params.contact.form.email]
+      text = "Su correo electrónico *"
+      warning = "Ingrese correctamente su correo electrónico de contacto."
+
+   # [params.contact.form.phone]
+   #  text = "Your Phone *"
+   #   warning = "Please enter your phone number."
+
+    [params.contact.form.message]
+      text = "Tu mensaje *"
+      warning = "Por favor ingresa el texto de tu mensaje."
+
+      # Add optional form fields to identify contact forms
+      #[[params.contact.form.hidden]]
+      #  name = "someID"
+      #  value = "example.com"
+      #
+      #[[params.contact.form.hidden]]
+      # Special values for name such as "page" and "site" will be autofilled
+      #  name = "page"
+
+  # Footer section
+  [params.footer]
+    enable = true
+    copyright = "Published under the Apache License 2.0."
+
+    [[params.footer.social]]
+      icon = "fa-twitter"
+      link = "https://twitter.com/DHARMaLabIA"
+      title = "Twitter"
+
+    [[params.footer.social]]
+      icon = "fa-github"
+      link = "https://github.com/satRdays"
+      title = "GitHub"
+
+    [[params.footer.quicklinks]]
+      text = "Código de Conducta"
+      link = "https://drive.google.com/open?id=1fdGc3po1VVraNEbr8fzfyLGrcPGFA2v8AWFunUQCdrI"
+
+   # [[params.footer.quicklinks]]
+   #   text = "Terms of Use"
+   #   link = "#"
+
