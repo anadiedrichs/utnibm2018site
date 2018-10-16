@@ -1,7 +1,7 @@
 # Site settings
-baseurl = "https://satrdays-event-template.netlify.com/"
+baseurl = "github.io/utnibmpublic"
 languageCode = "es-ES"
-title = "EVENTO"
+title = ""
 theme = ["hugo-satrdays-theme", "hugo-agency-theme"]
 
 # Enter your tracking code to enable Google Analytics
@@ -68,8 +68,8 @@ googleAnalytics = ""
 
     # postpended links
     [[menu.postpend]]
-      url = "http://satrdays.org/"
-      name = "satRdays.org"
+      url = ""
+      name = "INSCRIBITE"
       weight = 10
 
 
@@ -77,8 +77,8 @@ googleAnalytics = ""
   [params.hero]
     # To change the background image of the hero, replace 'header-bg.jpg' in
     # the 'static/img' folder.
-    title = "EVENTO "
-    subtitle = "Un EVENTO de innovación y hackathon solidaria"
+    title = "Un evento de innovación y hackatón solidaria "
+    subtitle = "Hackaton Valoremos los Alimentos"
     bg = true
     buttonText = "Más info"
 
@@ -93,8 +93,8 @@ googleAnalytics = ""
 
     [[params.services.row.list]]
       icon = "fa-clock-o"
-      title = "Detalles"
-      description = "[FECHAs horarios] en la UTN Mendoza"
+      title = "Inscribite"
+      description = "Se realizará el 20 y 21 de noviembre 2018 en la UTN Mendoza"
       url = "#"
 
     [[params.services.row.list]]
@@ -112,13 +112,13 @@ googleAnalytics = ""
     [[params.services.row.list]]
       icon = "fa-users"
       title = "Comunitario"
-      description = "Evento comunitario para desarrollar una aplicación para el Banco de Alimentos"
+      description = "Evento comunitario para desarrollar una aplicación prototipo para el Banco de Alimentos"
       url = "#"
 
     [[params.services.row.list]]
       icon = "fa-money"
       title = "Gratis"
-      description = "Evento gratuito, cupos limitados. Trae tu notebook"
+      description = "Evento gratuito, cupos limitados, catering incluido. Trae tu notebook"
       url = "#"
 
     [[params.services.row.list]]
@@ -138,8 +138,8 @@ googleAnalytics = ""
       # include botht the account and event in a string, seperated by /, with no spaces
 
   [params.eventbrite]
-    enable = false
-    title = "Register"
+    enable = true
+    title = "R"
     bg = true
     eid = "32416000129" 
       # Go to https://www.eventbrite.co.uk/support/articles/en_US/How_To/how-to-sell-eventbrite-tickets-registrations-on-your-website-using-embeddable-widgets?lg=en_GB 
@@ -167,7 +167,7 @@ googleAnalytics = ""
 
   # Talk [Portfolio] section
   [params.portfolio]
-    enable = true
+    enable = false
     # All projects defined in their own files. You can find example projects
     # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
     # at the root of this Hugo site.
@@ -184,7 +184,7 @@ googleAnalytics = ""
 
   # Schedule section
   [params.schedule]
-    enable = true
+    enable = false
     title = "Schedule"
     bg = false
 
@@ -234,7 +234,7 @@ googleAnalytics = ""
     enable = true
     # Possibility to center items
     #center = true
-    title = "Team"
+    title = "Equipo"
     subtitle = "The people putting it together"
     bg = false
     description = ""
@@ -290,7 +290,7 @@ googleAnalytics = ""
     # Possibility to center items
     #center = true
     # Optional client title specifying the involvement
-    title = "Sponsors"
+    title = "Organizadores y sponsors"
     bg = true
 
     # All the clients' logos are stored under 'static/img/logos'.
@@ -319,8 +319,8 @@ googleAnalytics = ""
       link = "http://www.frm.utn.edu.ar/"
 
   [params.diversity]
-    enable = false
-    title = ""
+    enable = true
+    title = "Código de conducta"
     bg = true
 
   # Contact section
@@ -395,8 +395,13 @@ googleAnalytics = ""
       title = "Twitter"
 
     [[params.footer.social]]
+      icon = "fa-facebook"
+      link = "https://www.facebook.com/DHARMa-Lab-293530487919151"
+      title = "Twitter"
+
+    [[params.footer.social]]
       icon = "fa-github"
-      link = "https://github.com/satRdays"
+      link = ""
       title = "GitHub"
 
     [[params.footer.quicklinks]]
