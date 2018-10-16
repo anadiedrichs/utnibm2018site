@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "github.io/utnibmpublic"
+baseurl = "anadiedrichs.github.io/utnibmpublic"
 languageCode = "es-ES"
 title = ""
 theme = ["hugo-satrdays-theme", "hugo-agency-theme"]
@@ -49,11 +49,11 @@ googleAnalytics = ""
     brand = "UTN Mendoza"
     # Optional logo as brand stored in img/
     logo = "logo.png"
-    services = "About"
-    portfolio = "Talks"
-    eventbrite = "Register"
-    schedule = "Schedule"
-    team = "People"
+    services = "Información"
+    portfolio = "Charlas"
+    eventbrite = "Registrarse"
+    schedule = "Cronograma"
+    team = "Personas"
     contact = "Contacto"
 
     # Add custom links. Those can be pre- and postpended to the default menu above.
@@ -86,7 +86,7 @@ googleAnalytics = ""
   # About [Services] section
   [params.services]
     enable = true
-    title = "Acerca de"
+    title = "Información"
     subtitle = "Detalles del evento"
 
     [[params.services.row]]
@@ -139,9 +139,9 @@ googleAnalytics = ""
 
   [params.eventbrite]
     enable = true
-    title = "R"
+    title = "Registrate"
     bg = true
-    eid = "32416000129" 
+    eid = "51471551797"  # es un numero entero
       # Go to https://www.eventbrite.co.uk/support/articles/en_US/How_To/how-to-sell-eventbrite-tickets-registrations-on-your-website-using-embeddable-widgets?lg=en_GB 
       # Follow instructions to discover your 'Website Integration' embeddable iframe
       # Take ONLY the numeric string between "eid=" and "&ref=etckt"
@@ -202,25 +202,25 @@ googleAnalytics = ""
       img = "1.jpg"
       date = "Inscribite"
       title = "Cupo limitado, participación gratuita"
-      description = "Difusión. Configura tu cuenta IBM https://tinyurl.com/ibmutn2018"
+      description = "[Configura tu cuenta IBM](https://tinyurl.com/ibmutn2018)"
 
     [[params.about.events]]
       img = "2.jpg"
       date = "Cierre inscripciones"
-      title = ""
+      title = "TODO DETERMINAR FECHA"
       description = "Comunicación con los participantes, confirmación asistencia."
 
     [[params.about.events]]
       img = "4.jpg"
       date = "Primer día del evento"
-      title = "Aprendiendo de IBM Watson"
-      description = "Texto"
+      title = "Aprendiendo IBM Watson"
+      description = "Trae tu notebook y muchas ganas de participar. [TODO Cronograma]()"
 
     [[params.about.events]]
       img = "3.jpg"
       date = "Segundo día del evento"
       title = "Desarrollaremos la aplicación"
-      description = "texto"
+      description = "Más detalles en el [cronograma del evento]()"
   
   # Location section
   [params.location]
@@ -235,10 +235,10 @@ googleAnalytics = ""
     # Possibility to center items
     #center = true
     title = "Equipo"
-    subtitle = "The people putting it together"
+    subtitle = "Personas que hacen posible este evento"
     bg = false
     description = ""
-    speakers = "Speakers"
+    speakers = "Disertantes y organizadores"
     
 
     # All team member's pictures are stored under 'static/img/team'.
@@ -246,12 +246,12 @@ googleAnalytics = ""
     # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
     [[params.team.members]]
       img = "faceholder.png"
-      name = "Organiser Name 1"
-      position = "Organiser Position 1"
-      reportsTo = ""
+      name = "Paola Simonetti"
+      position = "Senior Consultant for Corporate Citizenship projects"
+      reportsTo = "IBM Argentina"
       livesIn = "[Munich, Germany](#some-maps-url)"
       scope = [
-        "Role 1 for [thing 1](#)",
+        "[hola](frm.utn.edu.ar)",
         "Role 2 for [thing 2](#)",
         "Role 3 for [thing 3](#)"
       ]
@@ -259,9 +259,8 @@ googleAnalytics = ""
       bio = """I do things,
       and stuff"""
       social = [
-        ["fa-twitter", "#"],
-        ["fa-github", "#"],
-        ["fa-linkedin", "#"]
+        ["fa-twitter", "https://twitter.com/pao_simonetti"],
+        ["fa-linkedin", "https://www.linkedin.com/in/paola-simonetti-aa5b321/"]
       ]
 
     [[params.team.members]]
