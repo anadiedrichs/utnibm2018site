@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "anadiedrichs.github.io/utnibmpublic"
+baseurl = "https://anadiedrichs.github.io/utnibmpublic/"
 languageCode = "es-ES"
 title = ""
 theme = ["hugo-satrdays-theme", "hugo-agency-theme"]
@@ -234,24 +234,24 @@ googleAnalytics = ""
     enable = true
     # Possibility to center items
     #center = true
-    title = "Equipo"
+    title = "Disertantes y organizadores"
     subtitle = "Personas que hacen posible este evento"
     bg = false
     description = ""
-    speakers = "Disertantes y organizadores"
+    speakers = ""
     
 
     # All team member's pictures are stored under 'static/img/team'.
     # Replace them with your own too.
     # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
     [[params.team.members]]
-      img = "faceholder.png"
+      img = "paola.jpg"
       name = "Paola Simonetti"
-      position = "Senior Consultant for Corporate Citizenship projects"
-      reportsTo = "IBM Argentina"
-      livesIn = "[Munich, Germany](#some-maps-url)"
+      position = "Senior Consultant for Corporate Citizenship projects at IBM Argentina"
+      reportsTo = ""
+      livesIn =  "" #"[Munich, Germany](#some-maps-url)"
       scope = [
-        "[hola](frm.utn.edu.ar)",
+        "Disertante y organizadora",
         "Role 2 for [thing 2](#)",
         "Role 3 for [thing 3](#)"
       ]
@@ -265,7 +265,7 @@ googleAnalytics = ""
 
     [[params.team.members]]
       img = "faceholder.png"
-      name = "Organiser Name 2"
+      name = "Disertante 2"
       position = "Organiser Position 2"
       social = [
         ["fa-twitter", "#"],
@@ -275,12 +275,44 @@ googleAnalytics = ""
 
     [[params.team.members]]
       img = "faceholder.png"
-      name = "Organiser Name 3"
+      name = "Disertante 3"
       position = "Organiser Position 3"
       social = [
         ["fa-twitter", "#"],
         ["fa-github", "#"],
         ["fa-linkedin", "#"]
+      ]
+
+    [[params.team.members]]
+      img = "bromberg.jpg"
+      name = "Facundo Bromberg"
+      position = "Organizador"
+      #bio = "Director DHARMa Lab. Investigador CONICET"      
+      social = [
+        ["fa-twitter", "https://twitter.com/facundobromberg"],
+        ["fa-linkedin", "https://www.linkedin.com/in/facundobromberg/"],
+	["fa-globe","http://dharma.frm.utn.edu.ar/~fbromberg"]
+      ]
+
+    [[params.team.members]]
+      img = "seba.jpg"
+      name = "Diego Sebastian Perez"
+      position = "Organizador"
+      social = [
+        ["fa-twitter", "#"],
+        ["fa-globe", "http://dharma.frm.utn.edu.ar/~sperez"],
+        ["fa-linkedin", "https://www.linkedin.com/in/diegosebastianperez"]
+      ]
+
+
+    [[params.team.members]]
+      img = "ana.jpg"
+      name = "Ana Laura Diedrichs"
+      position = "Organizadora"
+      social = [
+        ["fa-twitter", "https://twitter.com/anadiedrichs"],
+        ["fa-globe", "https://anadiedrichs.github.io/"],
+        ["fa-linkedin", "https://www.linkedin.com/in/ana-laura-diedrichs-47038415"]
       ]
 
   # Client section
@@ -302,20 +334,25 @@ googleAnalytics = ""
       link = "#"
 
     [[params.clients]]
+      logo = "logo-valoremos-los-alimentos.png"
+      link = "#"
+
+    [[params.clients]]
+      logo = "UTNsistemas.png"
+      link = "http://www.frm.utn.edu.ar/"
+
+    [[params.clients]]
       logo = "logo-dharma.jpg"
       link = "http://dharma.frm.utn.edu.ar/"
 
-    [[params.clients]]
-      logo = "logo-valoremos-los-alimentos.jpg"
-      link = "#"
   
     [[params.clients]]
-      logo = "ibmpos_black.jpg"
+      logo = "IBM.jpg"
       link = "#"
 
     [[params.clients]]
-      logo = "UTNLOGO.png"
-      link = "http://www.frm.utn.edu.ar/"
+      logo = "ibmpos_black.jpg"
+      link = "#"
 
   [params.diversity]
     enable = true
@@ -324,7 +361,7 @@ googleAnalytics = ""
 
   # Contact section
   [params.contact]
-    enable = true
+    enable = false
     title = "Contactanos"
     subtitle  = "A nuestro correo utnibm2018 [at] frm.utn.edu.ar o en nuestras redes sociales."
     buttonText = "Enviar mensaje"
@@ -396,12 +433,17 @@ googleAnalytics = ""
     [[params.footer.social]]
       icon = "fa-facebook"
       link = "https://www.facebook.com/DHARMa-Lab-293530487919151"
-      title = "Twitter"
+      title = "Facebook"
 
     [[params.footer.social]]
       icon = "fa-github"
       link = ""
       title = "GitHub"
+
+    [[params.footer.social]]
+      icon = "fa-envelope"
+      link = "mailto:utnibm2018@frm.utn.edu.ar"
+      title = ""
 
     [[params.footer.quicklinks]]
       text = "Código de Conducta"
