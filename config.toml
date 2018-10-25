@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "https://anadiedrichs.github.io/utnibmpublic/"
+baseurl = "https://dharmalabia.github.io/code4food/"
 languageCode = "es-ES"
 title = ""
 theme = ["hugo-satrdays-theme", "hugo-agency-theme"]
@@ -17,8 +17,8 @@ googleAnalytics = ""
 
   # To provide some metadata for search engines feel free to add a few
   # information about you and your website.
-  name = "EVENTO IBM MENDOZA"
-  description = "EVENTO IBM MENDOZA"
+  name = "Taller de innovación Code For Food. Prototipando soluciones para reducir el desperdicio de alimentos en la cadena de valor"
+  description = "Taller de innovación Code For Food. Prototipando soluciones para reducir el desperdicio de alimentos en la cadena de valor"
   email = "utnibm2018@frm.utn.edu.ar"
 
   # Link custom assets relative to /static
@@ -77,8 +77,9 @@ googleAnalytics = ""
   [params.hero]
     # To change the background image of the hero, replace 'header-bg.jpg' in
     # the 'static/img' folder.
-    title = "Un evento de innovación y hackatón solidaria "
-    subtitle = "Hackaton Valoremos los Alimentos"
+  
+    title = "Prototipando soluciones para reducir el desperdicio de alimentos en la cadena de valor"
+    subtitle = "Taller de innovación Code For Food"
     bg = true
     buttonText = "Más info"
 
@@ -94,19 +95,19 @@ googleAnalytics = ""
     [[params.services.row.list]]
       icon = "fa-clock-o"
       title = "Inscribite"
-      description = "Se realizará el 20 y 21 de noviembre 2018 en la UTN Mendoza"
+      description = "Se realizará el 20 y 21 de noviembre 2018 en la UTN Mendoza."
       url = "#"
 
     [[params.services.row.list]]
       icon = "fa-laptop"
       title = "Hands on"
-      description = "Aprenderemos tecnologías innovadoras de IBM Watson"
+      description = "Aprenderemos tecnologías innovadoras de IBM Watson."
       url = "#"
 
     [[params.services.row.list]]
       icon = "fa-graduation-cap"
       title = "Aprendizaje"
-      description = "Gana experiencia y aprendizaje en design thinking y cloud computing"
+      description = "Gana experiencia y aprendizaje en design thinking y cloud computing."
       url = "#"
 
     [[params.services.row.list]]
@@ -192,8 +193,8 @@ googleAnalytics = ""
   [params.about]
     enable = true
     title = "Fechas importantes"
-    subtitle = "Be prepared!"
-    endpoint = "Conference"
+    subtitle = ""
+    endpoint = ""
 
     # The events will be listed from the top to the bottom.
     # All images are stored under 'static/img/about'.
@@ -207,20 +208,20 @@ googleAnalytics = ""
     [[params.about.events]]
       img = "2.jpg"
       date = "Cierre inscripciones"
-      title = "TODO DETERMINAR FECHA"
+      title = "Fecha de cierre de inscripciones a determinar."
       description = "Comunicación con los participantes, confirmación asistencia."
 
     [[params.about.events]]
       img = "4.jpg"
       date = "Primer día del evento"
       title = "Aprendiendo IBM Watson"
-      description = "Trae tu notebook y muchas ganas de participar. [TODO Cronograma]()"
+      description = "Trae tu notebook y muchas ganas de participar."
 
     [[params.about.events]]
       img = "3.jpg"
       date = "Segundo día del evento"
       title = "Desarrollaremos la aplicación"
-      description = "Más detalles en el [cronograma del evento]()"
+      description = "Pronto subiremos el cronograma."
   
   # Location section
   [params.location]
@@ -321,7 +322,7 @@ googleAnalytics = ""
     # Possibility to center items
     #center = true
     # Optional client title specifying the involvement
-    title = "Organizadores y sponsors"
+    title = "Organizan"
     bg = true
 
     # All the clients' logos are stored under 'static/img/logos'.
