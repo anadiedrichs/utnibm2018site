@@ -1,4 +1,4 @@
-# Site settings
+# Site settings https://dharmalabia.github.io/code4food/
 baseurl = "https://dharmalabia.github.io/code4food/"
 languageCode = "es-ES"
 title = ""
@@ -33,7 +33,7 @@ googleAnalytics = ""
   # 404 error customization
   [params.error404]
     heading = "No se pudo encontrar el sitio."
-    text = "No se pudo encontrar el sitio"
+    text = "No se pudo encontrar el sitio."
 
   # Optional piwik tracking
   #[params.analytics.piwik]
@@ -252,37 +252,37 @@ googleAnalytics = ""
       reportsTo = ""
       livesIn =  "" #"[Munich, Germany](#some-maps-url)"
       scope = [
-        "Disertante y organizadora",
-        "Role 2 for [thing 2](#)",
-        "Role 3 for [thing 3](#)"
+        "Disertante y organizadora"
+     #   ,"Role 2 for [thing 2](#)",
+    #    "Role 3 for [thing 3](#)"
       ]
       # For bio markdown and even multiline strings are available.
-      bio = """I do things,
-      and stuff"""
+    #  bio = """I do things,
+    #  and stuff"""
       social = [
         ["fa-twitter", "https://twitter.com/pao_simonetti"],
         ["fa-linkedin", "https://www.linkedin.com/in/paola-simonetti-aa5b321/"]
       ]
 
     [[params.team.members]]
-      img = "faceholder.png"
-      name = "Disertante 2"
-      position = "Organiser Position 2"
+      img = "maria.jpg"
+      name = "Maria Daniela Facciolo"
+      position = "Design Thinking consultant"
+      scope = ["Disertante"]
       social = [
         ["fa-twitter", "#"],
-        ["fa-github", "#"],
-        ["fa-linkedin", "#"]
+        ["fa-linkedin", "https://ar.linkedin.com/in/danielafacciolo"]
       ]
-
     [[params.team.members]]
-      img = "faceholder.png"
-      name = "Disertante 3"
-      position = "Organiser Position 3"
-      social = [
-        ["fa-twitter", "#"],
-        ["fa-github", "#"],
-        ["fa-linkedin", "#"]
+      img = "flor.jpg"
+      name = "Florencia Chiara Andres"
+      position = "Analista programadora"
+      scope = ["Disertante"]
+     social = [
+        ["fa-twitter", "https://twitter.com/florstradlin"],
+        ["fa-linkedin", "https://www.linkedin.com/in/florencia-andres-b16791120/"]
       ]
+    
 
     [[params.team.members]]
       img = "bromberg.jpg"
@@ -436,10 +436,10 @@ googleAnalytics = ""
       link = "https://www.facebook.com/DHARMa-Lab-293530487919151"
       title = "Facebook"
 
-    [[params.footer.social]]
-      icon = "fa-github"
-      link = ""
-      title = "GitHub"
+  #  [[params.footer.social]]
+  #    icon = "fa-github"
+  #    link = ""
+  #    title = "GitHub"
 
     [[params.footer.social]]
       icon = "fa-envelope"
