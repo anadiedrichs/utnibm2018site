@@ -48,7 +48,7 @@ googleAnalytics = ""
   [params.navigation]
     brand = "UTN Mendoza"
     # Optional logo as brand stored in img/
-    logo = "logo.png"
+    logo = "logoutn.png"
     services = "Información"
     portfolio = "Charlas"
     eventbrite = "Registrarse"
@@ -332,11 +332,11 @@ googleAnalytics = ""
 
     [[params.clients]]
       logo = "bcoAlimentos.png"
-      link = "#"
+      link = "http://www.bdamendoza.org.ar/"
 
     [[params.clients]]
       logo = "logo-valoremos-los-alimentos.png"
-      link = "#"
+      link = "http://www.alimentosargentinos.gob.ar/HomeAlimentos/ValoremoslosAlimentos/"
 
     [[params.clients]]
       logo = "UTNsistemas.png"
@@ -349,11 +349,11 @@ googleAnalytics = ""
   
     [[params.clients]]
       logo = "IBM.jpg"
-      link = "#"
+      link = "https://www.ibm.com/watson/"
 
     [[params.clients]]
       logo = "ibmpos_black.jpg"
-      link = "#"
+      link = "https://www.ibm.com/ar-es/"
 
   [params.diversity]
     enable = true
@@ -424,7 +424,7 @@ googleAnalytics = ""
   # Footer section
   [params.footer]
     enable = true
-    copyright = "Published under the Apache License 2.0."
+    copyright = "" #Published under the Apache License 2.0."
 
     [[params.footer.social]]
       icon = "fa-twitter"
