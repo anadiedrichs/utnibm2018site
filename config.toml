@@ -267,7 +267,7 @@ googleAnalytics = ""
     [[params.team.members]]
       img = "maria.jpg"
       name = "Maria Daniela Facciolo"
-      position = "Design Thinking consultant"
+      position = "Design Thinking consultant - IBM"
       scope = ["Disertante"]
       social = [
         ["fa-twitter", "#"],
@@ -276,7 +276,7 @@ googleAnalytics = ""
     [[params.team.members]]
       img = "flor.jpg"
       name = "Florencia Chiara Andres"
-      position = "Analista programadora"
+      position = "Analista programadora - IBM"
       scope = ["Disertante"]
      social = [
         ["fa-twitter", "https://twitter.com/florstradlin"],
@@ -337,6 +337,15 @@ googleAnalytics = ""
     [[params.clients]]
       logo = "logo-valoremos-los-alimentos.png"
       link = "http://www.alimentosargentinos.gob.ar/HomeAlimentos/ValoremoslosAlimentos/"
+      
+      
+    [[params.clients]]
+      logo = "IBM.jpg"
+      link = "https://www.ibm.com/watson/"
+
+    [[params.clients]]
+      logo = "ibmpos_black.jpg"
+      link = "https://www.ibm.com/ar-es/"
 
     [[params.clients]]
       logo = "UTNsistemas.png"
@@ -347,13 +356,6 @@ googleAnalytics = ""
       link = "http://dharma.frm.utn.edu.ar/"
 
   
-    [[params.clients]]
-      logo = "IBM.jpg"
-      link = "https://www.ibm.com/watson/"
-
-    [[params.clients]]
-      logo = "ibmpos_black.jpg"
-      link = "https://www.ibm.com/ar-es/"
 
   [params.diversity]
     enable = true
